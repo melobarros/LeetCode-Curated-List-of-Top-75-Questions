@@ -15,3 +15,14 @@ Example 2:
   Output: 0
   Explanation: In this case, no transaction is done, i.e. max profit = 0.
 """
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_price = float('inf')
+        max_profit = 0
+        
+        for price in prices:
+            min_price = min(price, min_price)
+            profit = price - min_price
+            max_profit = max(profit, max_profit)
+            
+        return max_profit
