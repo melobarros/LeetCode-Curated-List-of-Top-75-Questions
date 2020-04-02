@@ -18,7 +18,6 @@ Example 2:
   Explanation: In this case, no transaction is done, i.e. max profit = 0.
 """
 
-#O(n) complexity solution
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         min_price = float('inf')
