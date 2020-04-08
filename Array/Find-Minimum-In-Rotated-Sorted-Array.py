@@ -25,3 +25,6 @@ class Solution:
             ans = num
             
         return ans
+      
+        #Really simple solution: 
+        # return min(nums)
